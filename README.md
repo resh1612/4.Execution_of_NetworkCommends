@@ -28,6 +28,7 @@ This commands includes
 
 
 ## Program
+4a.
 
 client 
 ```
@@ -55,7 +56,17 @@ while True:
     print(s.recv(1024).decode())
 ```
 
+4b.
+```
+from scapy.all import* 
+target = ["www.google.com"] 
+result, unans = traceroute(target,maxttl=32) 
+print(result,unans)
+```
+
 ## Output
+
+4a. 
 
 client
 
@@ -65,6 +76,10 @@ server
 
 ![image](https://github.com/user-attachments/assets/793c5ac3-c0ac-4914-8c8e-7b7813133fbd)
 
+4b.
+
+
+![image](https://github.com/user-attachments/assets/cae49f44-ff7d-40e6-a2e6-0cef6b30618b)
 
 
 ## Result
